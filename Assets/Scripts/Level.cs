@@ -7,8 +7,5 @@ public class Level : ScriptableObject
     public int ID;
 
     [SerializeField]
-    public Sprite Icon;
-
-    [SerializeField]
-    public Exercise[] Exercises;
+    public ExerciseEntity[] Exercises;
 }
