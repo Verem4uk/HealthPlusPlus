@@ -10,9 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
-  m_Name: Squats
+  m_Name: 2Lying Straight-leg Raises
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  RussianText: "\u041F\u0440\u0438\u0441\u0435\u0434\u0430\u043D\u0438\u044F"
-  EnglishText: Squats
+  RussianText: "\u041F\u043E\u0434\u044A\u0435\u043C \u043F\u0440\u044F\u043C\u044B\u0445
+    \u043D\u043E\u0433 \u043B\u0435\u0436\u0430"
+  EnglishText: Lying Straight-leg Raises
   PolishText: 
