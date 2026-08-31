@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9371143ae46f6ba4d862b17a14fdc8b1, type: 3}
-  m_Name: Level3
+  m_Name: Level4
   m_EditorClassIdentifier: 
-  ID: 3
+  ID: 4
   Exercises:
   - exercise: {fileID: 11400000, guid: 8359d9c2c2ae41e41b541cc31fc671bf, type: 2}
     targetAmount: 10
@@ -22,7 +22,7 @@ MonoBehaviour:
     targetAmount: 10
   - exercise: {fileID: 11400000, guid: 33a6233e0e69c2d47aaadc218bd2f80e, type: 2}
     targetAmount: 10
-  - exercise: {fileID: 11400000, guid: 203617062c180084fb134245febc10d0, type: 2}
+  - exercise: {fileID: 11400000, guid: 6f226fa0d3daf3e46ac6507402e8a304, type: 2}
     targetAmount: 10
   - exercise: {fileID: 11400000, guid: bba58505dfe539946b05263bb08f3295, type: 2}
     targetAmount: 10
@@ -31,16 +31,16 @@ MonoBehaviour:
   - exercise: {fileID: 11400000, guid: 3dce7eba777d7ad41a9f82c0386b73f1, type: 2}
     targetAmount: 10
   - exercise: {fileID: 11400000, guid: f9d29ecc3206ebb4b9731a73f112f146, type: 2}
-    targetAmount: 5
-  - exercise: {fileID: 11400000, guid: 6f226fa0d3daf3e46ac6507402e8a304, type: 2}
     targetAmount: 10
-  - exercise: {fileID: 11400000, guid: 4db72a1734bb156458f1f02695a390bf, type: 2}
+  - exercise: {fileID: 11400000, guid: 731c08f2416595a47ab280d312fd39ea, type: 2}
+    targetAmount: 10
+  - exercise: {fileID: 11400000, guid: 0f820a70411f4164382b91b76b04148f, type: 2}
     targetAmount: 10
   - exercise: {fileID: 11400000, guid: 0b74e26407019d7419f3889fd4342da2, type: 2}
     targetAmount: 10
   - exercise: {fileID: 11400000, guid: 0616587821920364b9465f92dcfdc835, type: 2}
     targetAmount: 10
   - exercise: {fileID: 11400000, guid: 6725534ce53bfa64f88fdac7b16f263f, type: 2}
-    targetAmount: 5
+    targetAmount: 10
   - exercise: {fileID: 11400000, guid: 13c3fe52684fb5448a676dbce99e6577, type: 2}
-    targetAmount: 120
+    targetAmount: 150

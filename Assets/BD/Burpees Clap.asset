@@ -10,10 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
-  m_Name: 6Hanging Straight-leg
+  m_Name: Burpees Clap
   m_EditorClassIdentifier: 
   Icon: {fileID: 0}
-  RussianText: "\u041F\u043E\u0434\u044A\u0451\u043C \u043A\u043E\u043B\u0435\u043D
-    \u0432 \u0432\u0438\u0441\u0435"
-  EnglishText: Hanging Straight-leg Raises to 90 Degrees
+  RussianText: "\u0411\u0451\u0440\u043F\u0438 \u0441 \u0445\u043B\u043E\u043F\u043A\u043E\u043C"
+  EnglishText: Burpees with clap
   PolishText: 
