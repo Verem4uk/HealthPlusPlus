@@ -7,5 +7,5 @@ public class Level : ScriptableObject
     public int ID;
 
     [SerializeField]
-    public ExerciseEntity[] Exercises;
+    public ExerciseSOEntity[] Exercises;
 }

@@ -1,9 +1,8 @@
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Exercise", menuName = "Scriptable Objects/Exercise")]
-public class Exercise : ScriptableObject
+public class ExerciseSO : ScriptableObject
 {
-
     [SerializeField]
     public Sprite Icon;
 

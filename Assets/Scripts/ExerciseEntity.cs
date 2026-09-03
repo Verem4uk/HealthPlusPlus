@@ -1,14 +1,18 @@
-using System;
 using UnityEngine;
 
-[Serializable]
-public class ExerciseEntity
+public class ExerciseEntity : IExercise
 {
-    [SerializeField] 
-    private Exercise exercise;
-    [SerializeField] 
-    private int targetAmount;
+    ExerciseSOEntity SOEntity;
+    public int CurrentAmount { private set; get; }
 
-    public Exercise Exercise => exercise;
-    public int TargetAmount => targetAmount;
+    public ExerciseEntity(ExerciseSOEntity so, int currentAmount)
+    {
+        SOEntity = so;
+        CurrentAmount = currentAmount;
+    }
+
+    public Sprite GetImage() => SOEntity.GetIcon();
+
+    public bool IsFullyCompleted() => CurrentAmount == SOEntity.TargetAmount;
+
 }
