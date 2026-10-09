@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 0Knee Push-ups
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: -6320811373978797218, guid: 234b379a3c3a0be4b83d3ca8840640e5, type: 3}
   RussianText: "\u041E\u0442\u0436\u0438\u043C\u0430\u043D\u0438\u044F \u0441 \u043A\u043E\u043B\u0435\u043D"
   EnglishText: Knee Push-ups
   PolishText: 

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 1Lying Bent-leg Raises
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 7055644690094546312, guid: c6f480044315c3c4987f2aefb723d3c9, type: 3}
   RussianText: "\u041F\u043E\u0434\u044A\u0435\u043C \u0441\u043E\u0433\u043D\u0443\u0442\u044B\u0445
     \u043D\u043E\u0433 \u043B\u0435\u0436\u0430"
   EnglishText: Lying Bent-leg Raises

@@ -35,7 +35,7 @@ public class Trainer : ITrainer
         ExerciseIndex++;
         if(ExerciseIndex > ExercisesLength - 1)
         {
-            OnCompleted.Invoke();
+            OnCompleted?.Invoke();
             return null;
         }
 

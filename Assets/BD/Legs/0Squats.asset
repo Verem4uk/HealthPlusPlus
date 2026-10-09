@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 0Squats
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: -8795051787116537853, guid: 5b90c44dd44ed3147b65b1bb2c7eb3ca, type: 3}
   RussianText: "\u041F\u0440\u0438\u0441\u0435\u0434\u0430\u043D\u0438\u044F"
   EnglishText: Squats
   PolishText: 

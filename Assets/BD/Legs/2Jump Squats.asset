@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 2Jump Squats
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 6952912897438564340, guid: 584bf1361e735224fb91cc863062c1fa, type: 3}
   RussianText: "\u041F\u0440\u0438\u0441\u0435\u0434\u0430\u043D\u0438\u044F \u0441
     \u0432\u044B\u043F\u0440\u044B\u0433\u0438\u0432\u0430\u043D\u0438\u0435\u043C"
   EnglishText: Jump Squats

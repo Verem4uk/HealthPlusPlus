@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 3Clap Push-ups
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 6977449213658219518, guid: d5885a43fabbe924f873e6fcf19e419e, type: 3}
   RussianText: "\u041E\u0442\u0436\u0438\u043C\u0430\u043D\u0438\u044F \u0441 \u0445\u043B\u043E\u043F\u043A\u043E\u043C"
   EnglishText: Clap Push-ups
   PolishText: 

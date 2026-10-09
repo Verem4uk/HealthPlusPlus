@@ -11,7 +11,7 @@ public class Controller : MonoBehaviour
     private GameObject TreningScreen;
 
     [SerializeField]
-    private TextMeshProUGUI Aim;
+    private NumbersView NumbersView;
 
     [SerializeField]
     private Image Background;
@@ -46,7 +46,7 @@ public class Controller : MonoBehaviour
             TreningScreen.SetActive(false);
         }
 
-        Aim.text = exe.GetCurrentAmount().ToString();
+        NumbersView.SetValue(exe.GetCurrentAmount());
         Background.sprite = exe.GetImage();
     }
 
