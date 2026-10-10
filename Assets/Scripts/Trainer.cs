@@ -14,14 +14,14 @@ public class Trainer : ITrainer
 
     public Action OnCompleted;
 
-    public IExercise StartTrening(Level level, int baseNumber)
+    public IExercise StartTrening(Level level)
     {
         ExercisesLength = level.Exercises.Length;
         Level = level;
-        BaseNumber = baseNumber;
+        BaseNumber = level.BaseNumer;
 
         var exeSO = Level.Exercises[0];
-        CurrentExe = new ExerciseEntity(exeSO, baseNumber);
+        CurrentExe = new ExerciseEntity(exeSO, BaseNumber);
 
         return CurrentExe;
     }
@@ -48,7 +48,7 @@ public class Trainer : ITrainer
 
     public IExercise NextFail(int repeatsCompleted)
     {
-        BaseNumber = repeatsCompleted;
+        BaseNumber = BaseNumber > repeatsCompleted ? repeatsCompleted : BaseNumber;
         Regression = repeatsCompleted / 2;
 
         return NextSuccess();

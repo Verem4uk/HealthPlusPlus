@@ -15,6 +15,8 @@ public class ExerciseSOEntity
     [SerializeField]
     private bool evenOnly;
 
+    public bool InWarmingMode => inWarmingMode;
+
     public bool EvenOnly => evenOnly;
 
     public float Coefficient => coefficient;

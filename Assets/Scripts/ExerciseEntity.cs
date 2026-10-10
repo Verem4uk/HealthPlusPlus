@@ -5,12 +5,11 @@ public class ExerciseEntity : IExercise
     ExerciseSOEntity SOEntity;
     private int CurrentAmount;
 
-    public ExerciseEntity(ExerciseSOEntity so, int currentAmount)
+    public ExerciseEntity(ExerciseSOEntity so, int baseNumber)
     {
         SOEntity = so;
-        //CurrentAmount = 
-        var target = SOEntity.TargetAmount;
-        CurrentAmount = SOEntity.TargetAmount < currentAmount ? target : currentAmount;
+        CurrentAmount = (int)(SOEntity.InWarmingMode ? 
+            SOEntity.TargetAmount : baseNumber * SOEntity.Coefficient);
     }
 
     public Sprite GetImage() => SOEntity.GetIcon();

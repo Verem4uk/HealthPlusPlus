@@ -36,7 +36,7 @@ public class Controller : MonoBehaviour
 
         //implement from save system
 
-        var exe = Trainer.StartTrening(Levels[0], 30);
+        var exe = Trainer.StartTrening(Levels[0]);
         ShowExe(exe);
     }
 
@@ -46,6 +46,7 @@ public class Controller : MonoBehaviour
         {
             StartScreen.SetActive(true);
             TreningScreen.SetActive(false);
+            return;
         }
 
         NumbersView.SetValue(exe.GetCurrentAmount());
@@ -65,6 +66,7 @@ public class Controller : MonoBehaviour
 
     public void NextAfterFail()
     {
+        RegresPanel.SetActive(false);
         int.TryParse(RegresInput.text, out int repeats);
         var exe = Trainer.NextFail(repeats);
         ShowExe(exe);
