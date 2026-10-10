@@ -13,14 +13,30 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   ID: 1
+  BaseNumer: 30
   Exercises:
   - exercise: {fileID: 11400000, guid: 8359d9c2c2ae41e41b541cc31fc671bf, type: 2}
     targetAmount: 30
+    inWarmingMode: 0
+    coefficient: 1
+    evenOnly: 0
   - exercise: {fileID: 11400000, guid: 846f80951fe732443ab64c83be32a3fe, type: 2}
     targetAmount: 30
+    inWarmingMode: 0
+    coefficient: 1
+    evenOnly: 0
   - exercise: {fileID: 11400000, guid: afa23dc1ce8a1c74ba05d2c259281eb5, type: 2}
     targetAmount: 30
+    inWarmingMode: 0
+    coefficient: 1
+    evenOnly: 0
   - exercise: {fileID: 11400000, guid: 33a6233e0e69c2d47aaadc218bd2f80e, type: 2}
     targetAmount: 30
+    inWarmingMode: 0
+    coefficient: 1
+    evenOnly: 0
   - exercise: {fileID: 11400000, guid: 13c3fe52684fb5448a676dbce99e6577, type: 2}
     targetAmount: 30
+    inWarmingMode: 0
+    coefficient: 1
+    evenOnly: 0
