@@ -8,7 +8,9 @@ public class ExerciseEntity : IExercise
     public ExerciseEntity(ExerciseSOEntity so, int currentAmount)
     {
         SOEntity = so;
-        CurrentAmount = currentAmount;
+        //CurrentAmount = 
+        var target = SOEntity.TargetAmount;
+        CurrentAmount = SOEntity.TargetAmount < currentAmount ? target : currentAmount;
     }
 
     public Sprite GetImage() => SOEntity.GetIcon();

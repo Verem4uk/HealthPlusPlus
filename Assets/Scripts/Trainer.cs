@@ -18,6 +18,7 @@ public class Trainer : ITrainer
     {
         ExercisesLength = level.Exercises.Length;
         Level = level;
+        BaseNumber = baseNumber;
 
         var exeSO = Level.Exercises[0];
         CurrentExe = new ExerciseEntity(exeSO, baseNumber);

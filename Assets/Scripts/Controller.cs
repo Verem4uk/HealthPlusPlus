@@ -34,7 +34,9 @@ public class Controller : MonoBehaviour
 
         Trainer = new Trainer();
 
-        var exe = Trainer.StartTrening(Levels[0], 20);
+        //implement from save system
+
+        var exe = Trainer.StartTrening(Levels[0], 30);
         ShowExe(exe);
     }
 
