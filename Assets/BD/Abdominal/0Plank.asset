@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 0Plank
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 4536570729799689407, guid: aedbd713943240240aa987a395a67d2c, type: 3}
   RussianText: "\u041F\u043B\u0430\u043D\u043A\u0430"
   EnglishText: Plank
   PolishText: 

@@ -1,7 +1,12 @@
 
+using System;
+
 public interface ITrainer
 {
-    public IExercise StartTrening(Level level);
-    public IExercise NextSuccess();
-    public IExercise NextFail(int repeatsCompleted);
+    IExercise StartTrening(Level level, int baseNumber);
+    IExercise NextSuccess();
+    IExercise NextFail(int repeatsCompleted);
+    bool NextLevelUnlocked();
+    event Action<int> OnTrainingCompleted;
+    int CheckRegression();
 }

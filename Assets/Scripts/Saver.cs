@@ -5,11 +5,14 @@ public static class Saver
     public static void SetLanguage(int value) => PlayerPrefs.SetInt("Language", value);
     public static int GetLanguage() => PlayerPrefs.GetInt("Language");
 
-    public static int LastPastLevel { get; private set; }
+    public static void SetBaseNumber(int value) => PlayerPrefs.SetInt("BaseNumber", value);
+    public static int GetBaseNumber() => PlayerPrefs.GetInt("BaseNumber");
 
-    public static void InitLevel(int value)
+    public static void LevelUp()
     {
-        PlayerPrefs.SetInt("Level", value);        
+        var currentLvl = GetLevel();
+        SetLevel(++currentLvl);
+        SetBaseNumber(0);
     }
 
     public static void SetLevel(int value)
@@ -18,8 +21,7 @@ public static class Saver
         if(value > savedIndex)
         {
             PlayerPrefs.SetInt("Level", value);
-        }
-        LastPastLevel = value;
+        }        
     }
 
     public static int GetLevel() => PlayerPrefs.GetInt("Level");         

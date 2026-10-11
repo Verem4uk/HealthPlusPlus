@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9371143ae46f6ba4d862b17a14fdc8b1, type: 3}
   m_Name: Level6
   m_EditorClassIdentifier: 
-  ID: 6
+  ID: 5
   BaseNumer: 10
   Exercises:
   - exercise: {fileID: 11400000, guid: 8359d9c2c2ae41e41b541cc31fc671bf, type: 2}

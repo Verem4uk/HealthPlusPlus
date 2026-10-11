@@ -34,24 +34,34 @@ public class Controller : MonoBehaviour
 
         Trainer = new Trainer();
 
-        //implement from save system
+        Trainer.OnTrainingCompleted += OnCompleted;
 
-        var exe = Trainer.StartTrening(Levels[0]);
+        var lvlIndex = Saver.GetLevel();
+        var baseNumber = Saver.GetBaseNumber();
+        Debug.Log("Start base number is: " + baseNumber);
+        var level = Levels[lvlIndex];
+
+        if(baseNumber == 0)
+        {
+            baseNumber = level.BaseNumer;
+            Debug.Log("Base number from lvl is: " + baseNumber);
+        }
+
+        var exe = Trainer.StartTrening(Levels[lvlIndex], baseNumber);
+
         ShowExe(exe);
     }
 
     private void ShowExe(IExercise exe)
     {
         if(exe == null)
-        {
-            StartScreen.SetActive(true);
-            TreningScreen.SetActive(false);
+        {            
             return;
         }
 
         NumbersView.SetValue(exe.GetCurrentAmount());
         Background.sprite = exe.GetImage();
-    }
+    }  
 
     public void Next()
     {
@@ -70,5 +80,30 @@ public class Controller : MonoBehaviour
         int.TryParse(RegresInput.text, out int repeats);
         var exe = Trainer.NextFail(repeats);
         ShowExe(exe);
+    }
+
+    public void OnCompleted(int baseNumber)
+    {
+        Trainer.OnTrainingCompleted -= OnCompleted;
+
+        StartScreen.SetActive(true);
+        TreningScreen.SetActive(false);
+
+        if (Trainer.NextLevelUnlocked())
+        {
+            Saver.LevelUp();
+            return;
+        }
+
+        var regression = Trainer.CheckRegression();
+        if (regression > 0)
+        {
+            Saver.SetBaseNumber(regression);
+            Debug.Log("Base number after training is: " + regression);
+            return;
+        }
+
+        Debug.Log("Base number after training is: " + baseNumber);
+        Saver.SetBaseNumber(++baseNumber);        
     }
 }

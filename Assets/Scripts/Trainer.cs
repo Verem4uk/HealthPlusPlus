@@ -12,13 +12,13 @@ public class Trainer : ITrainer
 
     private IExercise CurrentExe;
 
-    public Action OnCompleted;
+    public event Action<int> OnTrainingCompleted;
 
-    public IExercise StartTrening(Level level)
+    public IExercise StartTrening(Level level, int baseNumber)
     {
         ExercisesLength = level.Exercises.Length;
         Level = level;
-        BaseNumber = level.BaseNumer;
+        BaseNumber = baseNumber;
 
         var exeSO = Level.Exercises[0];
         CurrentExe = new ExerciseEntity(exeSO, BaseNumber);
@@ -36,7 +36,7 @@ public class Trainer : ITrainer
         ExerciseIndex++;
         if(ExerciseIndex > ExercisesLength - 1)
         {
-            OnCompleted?.Invoke();
+            OnTrainingCompleted?.Invoke(BaseNumber);
             return null;
         }
 
@@ -55,5 +55,7 @@ public class Trainer : ITrainer
     }
 
     public bool NextLevelUnlocked() => Regression == 0 && FullyCompleted;
+
+    public int CheckRegression() => Regression;
 
 }
