@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 5Hanging Straight-leg
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
-  RussianText: "\u041F\u043E\u0434\u044A\u0451\u043C \u043A\u043E\u043B\u0435\u043D
-    \u0432 \u0432\u0438\u0441\u0435"
+  Icon: {fileID: -321522443478905804, guid: f58909ceaeea1a14e84696eebb670ec9, type: 3}
+  RussianText: "\u041F\u043E\u0434\u044A\u0451\u043C \u043F\u0440\u044F\u043C\u044B\u0445
+    \u043D\u043E\u0433 \u0434\u043E 90 \u0433\u0440\u0430\u0434\u0443\u0441\u043E\u0432\n"
   EnglishText: Hanging Straight-leg Raises to 90 Degrees
   PolishText: 

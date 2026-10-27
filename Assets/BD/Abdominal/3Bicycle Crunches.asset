@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 3Bicycle Crunches
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 4478701506104579593, guid: dcaf874810f296c41a1ebf301d5d8a6a, type: 3}
   RussianText: "\u0421\u043A\u0440\u0443\u0447\u0438\u0432\u0430\u043D\u0438\u044F
     \u0432\u0435\u043B\u043E\u0441\u0438\u043F\u0435\u0434"
   EnglishText: Bicycle Crunches

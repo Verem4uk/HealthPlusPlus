@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 4Hanging Knee Raises
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 4531692863781651196, guid: 94e7e107a8d5adf46a6756959323d5f0, type: 3}
   RussianText: "\u041F\u043E\u0434\u044A\u0451\u043C \u043A\u043E\u043B\u0435\u043D
     \u0432 \u0432\u0438\u0441\u0435"
   EnglishText: Hanging Knee Raises

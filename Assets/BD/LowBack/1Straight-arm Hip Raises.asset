@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 1Straight-arm Hip Raises
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: -5550495614638440928, guid: 03b6657baf22c314da1869461b943e91, type: 3}
   RussianText: "\u041F\u043E\u0434\u044A\u0435\u043C \u0442\u0430\u0437\u0430 \u0440\u0443\u043A\u0438
     \u043F\u0440\u044F\u043C\u044B\u0435"
   EnglishText: Straight-arm Hip Raises
