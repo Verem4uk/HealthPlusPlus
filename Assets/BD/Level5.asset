@@ -65,11 +65,6 @@ MonoBehaviour:
     inWarmingMode: 0
     coefficient: 1
     evenOnly: 0
-  - exercise: {fileID: 11400000, guid: d691e64a85f61244c9ea43e1c7a4a5da, type: 2}
-    targetAmount: 10
-    inWarmingMode: 0
-    coefficient: 1
-    evenOnly: 0
   - exercise: {fileID: 11400000, guid: 0b74e26407019d7419f3889fd4342da2, type: 2}
     targetAmount: 10
     inWarmingMode: 0
@@ -81,9 +76,9 @@ MonoBehaviour:
     coefficient: 2
     evenOnly: 1
   - exercise: {fileID: 11400000, guid: ea25fad43715a0c4b8501a1d1d59e6f7, type: 2}
-    targetAmount: 5
+    targetAmount: 10
     inWarmingMode: 0
-    coefficient: 0.5
+    coefficient: 1
     evenOnly: 0
   - exercise: {fileID: 11400000, guid: 40aef37ecac42ae48aa7346e90fb3157, type: 2}
     targetAmount: 10

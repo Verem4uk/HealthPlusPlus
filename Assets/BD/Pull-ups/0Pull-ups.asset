@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89fa10b60316f2244801afa110b57e34, type: 3}
   m_Name: 0Pull-ups
   m_EditorClassIdentifier: 
-  Icon: {fileID: 0}
+  Icon: {fileID: 2949875725736687241, guid: 5c7daaf894c63a642b5414e265e53d71, type: 3}
   RussianText: "\u041F\u043E\u0434\u0442\u044F\u0433\u0438\u0432\u0430\u043D\u0438\u044F"
   EnglishText: Pull-ups
   PolishText: 

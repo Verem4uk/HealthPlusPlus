@@ -1,0 +1,416 @@
+fileFormatVersion: 2
+guid: a1eb3cc1ba0fe1a49abb57ae6230fe24
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2901599124951520112
+    second: Health_ Celtic Bronze and Ivy Emblem_0
+  - first:
+      213: -8715033095237602561
+    second: Health_ Celtic Bronze and Ivy Emblem_1
+  - first:
+      213: -7068930459515661015
+    second: Health_ Celtic Bronze and Ivy Emblem_2
+  - first:
+      213: -7141473271788888617
+    second: Health_ Celtic Bronze and Ivy Emblem_3
+  - first:
+      213: 4886589509250889035
+    second: Health_ Celtic Bronze and Ivy Emblem_4
+  - first:
+      213: 3295649368763162058
+    second: Health_ Celtic Bronze and Ivy Emblem_5
+  - first:
+      213: -5196173174364226021
+    second: Health_ Celtic Bronze and Ivy Emblem_6
+  - first:
+      213: -3090117487579626839
+    second: Health_ Celtic Bronze and Ivy Emblem_7
+  - first:
+      213: -1459793493375952440
+    second: Health_ Celtic Bronze and Ivy Emblem_8
+  - first:
+      213: 7610291731607735703
+    second: Health_ Celtic Bronze and Ivy Emblem_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1885
+        height: 827
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073d153e70d844820800000000000000
+      internalID: 2901599124951520112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_1
+      rect:
+        serializedVersion: 2
+        x: 1574
+        y: 779
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff2f698f29bfd0780800000000000000
+      internalID: -8715033095237602561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 730
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92551aa233d16ed90800000000000000
+      internalID: -7068930459515661015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_3
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 753
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dd931e75e364ec90800000000000000
+      internalID: -7141473271788888617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_4
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 753
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b45bc06b447a0d340800000000000000
+      internalID: 4886589509250889035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_5
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 753
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acd5e59c3af7cbd20800000000000000
+      internalID: 3295649368763162058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_6
+      rect:
+        serializedVersion: 2
+        x: 1542
+        y: 738
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e3b96470c73e7b0800000000000000
+      internalID: -5196173174364226021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_7
+      rect:
+        serializedVersion: 2
+        x: 1608
+        y: 15
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a208966482bd15d0800000000000000
+      internalID: -3090117487579626839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_8
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 25
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c956e55d85cdbbe0800000000000000
+      internalID: -1459793493375952440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Health_ Celtic Bronze and Ivy Emblem_9
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 12
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d429342003d9960800000000000000
+      internalID: 7610291731607735703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Health_ Celtic Bronze and Ivy Emblem_0: 2901599124951520112
+      Health_ Celtic Bronze and Ivy Emblem_1: -8715033095237602561
+      Health_ Celtic Bronze and Ivy Emblem_2: -7068930459515661015
+      Health_ Celtic Bronze and Ivy Emblem_3: -7141473271788888617
+      Health_ Celtic Bronze and Ivy Emblem_4: 4886589509250889035
+      Health_ Celtic Bronze and Ivy Emblem_5: 3295649368763162058
+      Health_ Celtic Bronze and Ivy Emblem_6: -5196173174364226021
+      Health_ Celtic Bronze and Ivy Emblem_7: -3090117487579626839
+      Health_ Celtic Bronze and Ivy Emblem_8: -1459793493375952440
+      Health_ Celtic Bronze and Ivy Emblem_9: 7610291731607735703
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
