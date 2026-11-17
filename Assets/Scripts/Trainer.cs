@@ -17,6 +17,10 @@ public class Trainer : ITrainer
 
     public IExercise StartTrening(Level level, int baseNumber)
     {
+        ExerciseIndex = 0;
+        Regression = 0;
+        FullyCompleted = true;
+
         ExercisesLength = level.Exercises.Length;
         Level = level;
         BaseNumber = baseNumber;
