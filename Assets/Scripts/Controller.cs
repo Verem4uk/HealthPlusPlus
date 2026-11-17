@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 
 public class Controller : MonoBehaviour
 {
@@ -20,12 +19,21 @@ public class Controller : MonoBehaviour
     private GameObject RegresPanel;
 
     [SerializeField]
-    private TMP_InputField RegresInput;
+    private NumbersView RegresNumbersView;
+
+    [SerializeField]
+    private Button RegresMinusButton;
+
+    [SerializeField]
+    private Button RegresPlusButton;
 
     [SerializeField]
     private Level[] Levels;
 
     private ITrainer Trainer;
+    private int RequiredRepeats;
+    private int RegresRepeats;
+    private int RegresMaxRepeats;
 
     public void Play()
     {
@@ -59,7 +67,8 @@ public class Controller : MonoBehaviour
             return;
         }
 
-        NumbersView.SetValue(exe.GetCurrentAmount());
+        RequiredRepeats = exe.GetCurrentAmount();
+        NumbersView.SetValue(RequiredRepeats);
         Background.sprite = exe.GetImage();
     }  
 
@@ -71,14 +80,35 @@ public class Controller : MonoBehaviour
 
     public void Fail()
     {
+        RegresMaxRepeats = Mathf.Max(0, RequiredRepeats - 1);
+        RegresRepeats = RegresMaxRepeats;
+        UpdateRegresCounter();
         RegresPanel.SetActive(true);
+    }
+
+    public void DecreaseRegresRepeats()
+    {
+        RegresRepeats = Mathf.Max(0, RegresRepeats - 1);
+        UpdateRegresCounter();
+    }
+
+    public void IncreaseRegresRepeats()
+    {
+        RegresRepeats = Mathf.Min(RegresMaxRepeats, RegresRepeats + 1);
+        UpdateRegresCounter();
+    }
+
+    private void UpdateRegresCounter()
+    {
+        RegresNumbersView.SetValue(RegresRepeats);
+        RegresMinusButton.interactable = RegresRepeats > 0;
+        RegresPlusButton.interactable = RegresRepeats < RegresMaxRepeats;
     }
 
     public void NextAfterFail()
     {
         RegresPanel.SetActive(false);
-        int.TryParse(RegresInput.text, out int repeats);
-        var exe = Trainer.NextFail(repeats);
+        var exe = Trainer.NextFail(RegresRepeats);
         ShowExe(exe);
     }
 
