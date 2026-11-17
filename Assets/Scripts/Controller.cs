@@ -10,7 +10,7 @@ public class Controller : MonoBehaviour
     private GameObject TreningScreen;
 
     [SerializeField]
-    private NumbersView NumbersView;
+    private ExerciseTimerView ExerciseView;
 
     [SerializeField]
     private Image Background;
@@ -72,13 +72,13 @@ public class Controller : MonoBehaviour
         }
 
         RequiredRepeats = exe.GetCurrentAmount();
-        NumbersView.SetValue(RequiredRepeats);
+        ExerciseView.Show(exe.IsTimed, RequiredRepeats);
         Background.sprite = exe.GetImage();
     }  
 
     public void Next()
     {
-        if (State != TrainingState.Training)
+        if (State != TrainingState.Training || !ExerciseView.CanComplete)
         {
             return;
         }
@@ -89,13 +89,22 @@ public class Controller : MonoBehaviour
 
     public void Fail()
     {
-        if (State != TrainingState.Training)
+        if (State != TrainingState.Training || !ExerciseView.CanFail)
         {
             return;
         }
 
         State = TrainingState.AwaitingRegression;
-        RegresPanel.Open(Mathf.Max(0, RequiredRepeats - 1));
+        var maxRepeats = Mathf.Max(0, RequiredRepeats - 1);
+        if (ExerciseView.IsTimed)
+        {
+            var secondsCompleted = ExerciseView.StopCountdown();
+            RegresPanel.Open(maxRepeats, secondsCompleted);
+        }
+        else
+        {
+            RegresPanel.Open(maxRepeats);
+        }
     }
 
     public void NextAfterFail()

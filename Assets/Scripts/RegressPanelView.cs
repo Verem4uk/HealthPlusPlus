@@ -20,8 +20,13 @@ public class RegressPanelView : MonoBehaviour
 
     public void Open(int maxRepeats)
     {
+        Open(maxRepeats, maxRepeats);
+    }
+
+    public void Open(int maxRepeats, int initialRepeats)
+    {
         MaxRepeats = Mathf.Max(0, maxRepeats);
-        SelectedRepeats = MaxRepeats;
+        SelectedRepeats = Mathf.Clamp(initialRepeats, 0, MaxRepeats);
         Opened = true;
         UpdateCounter();
         gameObject.SetActive(true);

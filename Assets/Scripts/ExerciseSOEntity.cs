@@ -23,5 +23,7 @@ public class ExerciseSOEntity
 
     public int TargetAmount => targetAmount;
 
+    public bool IsTimed => exercise.IsTimed;
+
     public Sprite GetIcon() => exercise.Icon;
 }

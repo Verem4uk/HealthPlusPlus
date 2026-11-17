@@ -4,6 +4,11 @@ using UnityEngine;
 public class ExerciseSO : ScriptableObject
 {
     [SerializeField]
+    private bool timed;
+
+    public bool IsTimed => timed;
+
+    [SerializeField]
     public Sprite Icon;
 
     [SerializeField, TextAreaAttribute]
