@@ -1,0 +1,2288 @@
+fileFormatVersion: 2
+guid: cd199b1f06221fc429aa647e7997e214
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8032227234726517543
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_0"
+  - first:
+      213: 673911376765463838
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_1"
+  - first:
+      213: 1779920091622725334
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_2"
+  - first:
+      213: -3234921860746929338
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_3"
+  - first:
+      213: 8054343495358485747
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_4"
+  - first:
+      213: 5905159064390806108
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_5"
+  - first:
+      213: -1446850187101915684
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_6"
+  - first:
+      213: 7042364562977383989
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_7"
+  - first:
+      213: 3199587711727374832
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_8"
+  - first:
+      213: 5930121714972326629
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_9"
+  - first:
+      213: 1791040012605820642
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_10"
+  - first:
+      213: -6898186987934776467
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_11"
+  - first:
+      213: 5519618009236303476
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_12"
+  - first:
+      213: -5422794912296202954
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_13"
+  - first:
+      213: 4096026089471013124
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_14"
+  - first:
+      213: -1889021790894595444
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_15"
+  - first:
+      213: 5375683432775508567
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_16"
+  - first:
+      213: 1797294787492379546
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_17"
+  - first:
+      213: -2615293154686359309
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_18"
+  - first:
+      213: 6599994480906742540
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_19"
+  - first:
+      213: 4602390713788320873
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_20"
+  - first:
+      213: -3410341570896082072
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_21"
+  - first:
+      213: -9009851732261620963
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_22"
+  - first:
+      213: 4674319766495333905
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_23"
+  - first:
+      213: 3044013404577981696
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_24"
+  - first:
+      213: 7252637310880859200
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_25"
+  - first:
+      213: -2581755842291525906
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_26"
+  - first:
+      213: -6616514675105383905
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_27"
+  - first:
+      213: 7553752705364234577
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_28"
+  - first:
+      213: 6605262795510478576
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_29"
+  - first:
+      213: -9145550766832416733
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_30"
+  - first:
+      213: 2501746873465335990
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_31"
+  - first:
+      213: -6638716653570101069
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_32"
+  - first:
+      213: -8292038354266989980
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_33"
+  - first:
+      213: 4212257181258667009
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_34"
+  - first:
+      213: -7502492744856740492
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_35"
+  - first:
+      213: -3974575785070795524
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_36"
+  - first:
+      213: -8683679673432219036
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_37"
+  - first:
+      213: 3769523436128171073
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_38"
+  - first:
+      213: 1999137077807896409
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_39"
+  - first:
+      213: -1584157650659805364
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_40"
+  - first:
+      213: 7127215036850484116
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_41"
+  - first:
+      213: -880835103705759729
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_42"
+  - first:
+      213: -1792754867249099207
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_43"
+  - first:
+      213: 3906172900271690440
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_44"
+  - first:
+      213: 7336964550913784412
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_45"
+  - first:
+      213: 6179411174111220584
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_46"
+  - first:
+      213: -7157247123752924798
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_47"
+  - first:
+      213: 849134507487507184
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_48"
+  - first:
+      213: 2640925380850568934
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_49"
+  - first:
+      213: 6454498767694164364
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_50"
+  - first:
+      213: -570362080894228019
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_51"
+  - first:
+      213: -3728062273405451067
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_52"
+  - first:
+      213: 6960848247043545078
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_53"
+  - first:
+      213: 1250698489011958187
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_54"
+  - first:
+      213: -337129147494920855
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_55"
+  - first:
+      213: -6634118663535151246
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_56"
+  - first:
+      213: 4128324030465181792
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_57"
+  - first:
+      213: 5664187089811808304
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_58"
+  - first:
+      213: -6095026129804160579
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_59"
+  - first:
+      213: -287754998095955440
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_60"
+  - first:
+      213: 7002011959938304501
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_61"
+  - first:
+      213: 8408962213404223623
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_62"
+  - first:
+      213: -7462350445945802160
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_63"
+  - first:
+      213: 1441501905020014180
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_64"
+  - first:
+      213: 7099777294122285351
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_65"
+  - first:
+      213: 5583656170248722918
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_66"
+  - first:
+      213: 1855792210839180009
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_67"
+  - first:
+      213: -2562602970115541098
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_68"
+  - first:
+      213: 7387618397318720815
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_69"
+  - first:
+      213: -3912784614195759239
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_70"
+  - first:
+      213: 8369250589174441381
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_71"
+  - first:
+      213: -8943218052361967838
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_72"
+  - first:
+      213: 3697880016214024472
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_73"
+  - first:
+      213: 2000521916306939590
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_74"
+  - first:
+      213: -8641471228591385265
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_75"
+  - first:
+      213: 7669997109741565967
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_76"
+  - first:
+      213: -7489788064127426900
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_77"
+  - first:
+      213: -4713557492601181766
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_78"
+  - first:
+      213: -3221388104637585048
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_79"
+  - first:
+      213: -1482987690356441713
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_80"
+  - first:
+      213: -2482658422162308099
+    second: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_81"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_0"
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 1041
+        width: 16
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72b97190d14387f60800000000000000
+      internalID: 8032227234726517543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_1"
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 605
+        width: 748
+        height: 480
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1d233e93d63a5900800000000000000
+      internalID: 673911376765463838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_2"
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 1069
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6d0c594eb83b810800000000000000
+      internalID: 1779920091622725334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_3"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 661
+        width: 701
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b980ef4bf3b13d0800000000000000
+      internalID: -3234921860746929338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_4"
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1047
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f412db3cb6c6cf60800000000000000
+      internalID: 8054343495358485747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_5"
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1022
+        width: 15
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a2137d1e653f150800000000000000
+      internalID: 5905159064390806108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_6"
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 996
+        width: 47
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd5359aab61cbebe0800000000000000
+      internalID: -1446850187101915684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_7"
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 1040
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536e01b02418bb160800000000000000
+      internalID: 7042364562977383989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_8"
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 1047
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f117395218376c20800000000000000
+      internalID: 3199587711727374832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_9"
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 1028
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ea71c7d7460c4250800000000000000
+      internalID: 5930121714972326629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_10"
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1035
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee81e1f66d0bd810800000000000000
+      internalID: 1791040012605820642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_11"
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1002
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d630ded8b77b440a0800000000000000
+      internalID: -6898186987934776467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_12"
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 1022
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ee060d55f999c40800000000000000
+      internalID: 5519618009236303476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_13"
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1015
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63d0aca22cc5eb4b0800000000000000
+      internalID: -5422794912296202954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_14"
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 1022
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401f6a5d60208d830800000000000000
+      internalID: 4096026089471013124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_15"
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 1022
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8261cc80b8d8c5e0800000000000000
+      internalID: -1889021790894595444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_16"
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 988
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 752698bb9934a9a40800000000000000
+      internalID: 5375683432775508567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_17"
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 978
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9bf425361641f810800000000000000
+      internalID: 1797294787492379546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_18"
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 980
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f8a8637bbc94bbd0800000000000000
+      internalID: -2615293154686359309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_19"
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 955
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b2cf91304e79b50800000000000000
+      internalID: 6599994480906742540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_20"
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 961
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96cc8ec38f9fedf30800000000000000
+      internalID: 4602390713788320873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_21"
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 957
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86bcdf7f8680ca0d0800000000000000
+      internalID: -3410341570896082072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_22"
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 965
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13bb93f59396f280800000000000000
+      internalID: -9009851732261620963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_23"
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 963
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e8a80ef058ed040800000000000000
+      internalID: 4674319766495333905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_24"
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 957
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 005e56740128e3a20800000000000000
+      internalID: 3044013404577981696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_25"
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 947
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0444cc7453b86a460800000000000000
+      internalID: 7252637310880859200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_26"
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 811
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee69c6b7db2cb2cd0800000000000000
+      internalID: -2581755842291525906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_27"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1431
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1a3f2375fa6d24a0800000000000000
+      internalID: -6616514675105383905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_28"
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 432
+        width: 422
+        height: 289
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1519164601254d860800000000000000
+      internalID: 7553752705364234577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_29"
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 323
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f6718e248b9aab50800000000000000
+      internalID: 6605262795510478576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_30"
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 107
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32807a3680a741180800000000000000
+      internalID: -9145550766832416733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_31"
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 99
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b078dec68df7b220800000000000000
+      internalID: 2501746873465335990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_32"
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 19
+        width: 45
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0fb73806a8ed3a0800000000000000
+      internalID: -6638716653570101069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_33"
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 94
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a5006cc03ccec80800000000000000
+      internalID: -8292038354266989980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_34"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 60
+        width: 29
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 104d28fb691f47a30800000000000000
+      internalID: 4212257181258667009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_35"
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 79
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47d5ed4399ac1e790800000000000000
+      internalID: -7502492744856740492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_36"
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 65
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf46cf5b16877d8c0800000000000000
+      internalID: -3974575785070795524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_37"
+      rect:
+        serializedVersion: 2
+        x: 939
+        y: 70
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 462eac9585f5d7780800000000000000
+      internalID: -8683679673432219036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_38"
+      rect:
+        serializedVersion: 2
+        x: 1237
+        y: 72
+        width: 13
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 144fde6e799005430800000000000000
+      internalID: 3769523436128171073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_39"
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 82
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9575d04949c5ebb10800000000000000
+      internalID: 1999137077807896409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_40"
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 68
+        width: 22
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47743c8201f30ae0800000000000000
+      internalID: -1584157650659805364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_41"
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 493bb4d7054f8e260800000000000000
+      internalID: 7127215036850484116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_42"
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 57
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f008ce9d325a6c3f0800000000000000
+      internalID: -880835103705759729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_43"
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 13
+        width: 46
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ec34852fade17e0800000000000000
+      internalID: -1792754867249099207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_44"
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 66
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c293f79e83853630800000000000000
+      internalID: 3906172900271690440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_45"
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 29
+        width: 30
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5a79dad26222d560800000000000000
+      internalID: 7336964550913784412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_46"
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 56
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8639af119bda1c550800000000000000
+      internalID: 6179411174111220584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_47"
+      rect:
+        serializedVersion: 2
+        x: 921
+        y: 25
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 289450369a95cac90800000000000000
+      internalID: -7157247123752924798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_48"
+      rect:
+        serializedVersion: 2
+        x: 1108
+        y: 46
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f2b15de55bb8cb00800000000000000
+      internalID: 849134507487507184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_49"
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 52
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ee49e344a376a420800000000000000
+      internalID: 2640925380850568934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_50"
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 52
+        width: 11
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c817b9b8e6cf29950800000000000000
+      internalID: 6454498767694164364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_51"
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 60
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc962f695baa518f0800000000000000
+      internalID: -570362080894228019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_52"
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 51
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c4022d4d13434cc0800000000000000
+      internalID: -3728062273405451067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_53"
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 58
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f75e6cb996e99060800000000000000
+      internalID: 6960848247043545078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_54"
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 42
+        width: 13
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1fca636af5b5110800000000000000
+      internalID: 1250698489011958187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_55"
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 30
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96d822893d6425bf0800000000000000
+      internalID: -337129147494920855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_56"
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 50
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277b23e7930eee3a0800000000000000
+      internalID: -6634118663535151246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_57"
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 50
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 068069935d0ca4930800000000000000
+      internalID: 4128324030465181792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_58"
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 48
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0302695e52c3b9e40800000000000000
+      internalID: 5664187089811808304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_59"
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 13
+        width: 55
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db19c4c170e1a6ba0800000000000000
+      internalID: -6095026129804160579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_60"
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 22
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01ab5249a50b10cf0800000000000000
+      internalID: -287754998095955440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_61"
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 27
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f9c82187c42c2160800000000000000
+      internalID: 7002011959938304501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_62"
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 31
+        width: 22
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78824ab9492a2b470800000000000000
+      internalID: 8408962213404223623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_63"
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 31
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0523cef7ec7607890800000000000000
+      internalID: -7462350445945802160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_64"
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 29
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e44cf585e310410800000000000000
+      internalID: 1441501905020014180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_65"
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 29
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729fa8035d9778260800000000000000
+      internalID: 7099777294122285351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_66"
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 25
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9d79f04b12d7d40800000000000000
+      internalID: 5583656170248722918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_67"
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 31
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e29100fe2911c910800000000000000
+      internalID: 1855792210839180009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_68"
+      rect:
+        serializedVersion: 2
+        x: 975
+        y: 21
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697f6e90d2ecf6cd0800000000000000
+      internalID: -2562602970115541098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_69"
+      rect:
+        serializedVersion: 2
+        x: 1128
+        y: 18
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2da2548ac7168660800000000000000
+      internalID: 7387618397318720815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_70"
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 35
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9777f3ccf1ff2b9c0800000000000000
+      internalID: -3912784614195759239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_71"
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 32
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a5a8f3911d852470800000000000000
+      internalID: 8369250589174441381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_72"
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 15
+        width: 18
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227aa18809e43e380800000000000000
+      internalID: -8943218052361967838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_73"
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 29
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 811e3745842815330800000000000000
+      internalID: 3697880016214024472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_74"
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cedbda651843cb10800000000000000
+      internalID: 2000521916306939590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_75"
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 12
+        width: 23
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f455d0bb3b3531880800000000000000
+      internalID: -8641471228591385265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_76"
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 15
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f083b62ebbd417a60800000000000000
+      internalID: 7669997109741565967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_77"
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 15
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae59b2307dee0890800000000000000
+      internalID: -7489788064127426900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_78"
+      rect:
+        serializedVersion: 2
+        x: 1166
+        y: 17
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab920291f64169eb0800000000000000
+      internalID: -4713557492601181766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_79"
+      rect:
+        serializedVersion: 2
+        x: 1179
+        y: 15
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 869686326945b43d0800000000000000
+      internalID: -3221388104637585048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_80"
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 17
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8df6068d8e5b6be0800000000000000
+      internalID: -1482987690356441713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Metallic Gothic \u201CHow Many Did You Complete_\u201D_81"
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 79
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df342689153db8dd0800000000000000
+      internalID: -2482658422162308099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_0": 8032227234726517543
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_1": 673911376765463838
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_10": 1791040012605820642
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_11": -6898186987934776467
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_12": 5519618009236303476
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_13": -5422794912296202954
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_14": 4096026089471013124
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_15": -1889021790894595444
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_16": 5375683432775508567
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_17": 1797294787492379546
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_18": -2615293154686359309
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_19": 6599994480906742540
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_2": 1779920091622725334
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_20": 4602390713788320873
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_21": -3410341570896082072
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_22": -9009851732261620963
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_23": 4674319766495333905
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_24": 3044013404577981696
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_25": 7252637310880859200
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_26": -2581755842291525906
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_27": -6616514675105383905
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_28": 7553752705364234577
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_29": 6605262795510478576
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_3": -3234921860746929338
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_30": -9145550766832416733
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_31": 2501746873465335990
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_32": -6638716653570101069
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_33": -8292038354266989980
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_34": 4212257181258667009
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_35": -7502492744856740492
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_36": -3974575785070795524
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_37": -8683679673432219036
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_38": 3769523436128171073
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_39": 1999137077807896409
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_4": 8054343495358485747
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_40": -1584157650659805364
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_41": 7127215036850484116
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_42": -880835103705759729
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_43": -1792754867249099207
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_44": 3906172900271690440
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_45": 7336964550913784412
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_46": 6179411174111220584
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_47": -7157247123752924798
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_48": 849134507487507184
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_49": 2640925380850568934
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_5": 5905159064390806108
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_50": 6454498767694164364
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_51": -570362080894228019
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_52": -3728062273405451067
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_53": 6960848247043545078
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_54": 1250698489011958187
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_55": -337129147494920855
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_56": -6634118663535151246
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_57": 4128324030465181792
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_58": 5664187089811808304
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_59": -6095026129804160579
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_6": -1446850187101915684
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_60": -287754998095955440
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_61": 7002011959938304501
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_62": 8408962213404223623
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_63": -7462350445945802160
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_64": 1441501905020014180
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_65": 7099777294122285351
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_66": 5583656170248722918
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_67": 1855792210839180009
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_68": -2562602970115541098
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_69": 7387618397318720815
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_7": 7042364562977383989
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_70": -3912784614195759239
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_71": 8369250589174441381
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_72": -8943218052361967838
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_73": 3697880016214024472
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_74": 2000521916306939590
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_75": -8641471228591385265
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_76": 7669997109741565967
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_77": -7489788064127426900
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_78": -4713557492601181766
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_79": -3221388104637585048
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_8": 3199587711727374832
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_80": -1482987690356441713
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_81": -2482658422162308099
+      "Metallic Gothic \u201CHow Many Did You Complete_\u201D_9": 5930121714972326629
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
