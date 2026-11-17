@@ -7,6 +7,9 @@ public class Controller : MonoBehaviour
     private GameObject StartScreen;
 
     [SerializeField]
+    private MainMenuTransitionView MainMenuView;
+
+    [SerializeField]
     private GameObject TreningScreen;
 
     [SerializeField]
@@ -35,7 +38,7 @@ public class Controller : MonoBehaviour
 
     public void Play()
     {
-        if (State != TrainingState.Idle)
+        if (State != TrainingState.Idle || MainMenuView.IsTransitioning)
         {
             return;
         }
@@ -131,24 +134,28 @@ public class Controller : MonoBehaviour
         State = TrainingState.Idle;
         Trainer.OnTrainingCompleted -= OnCompleted;
 
-        StartScreen.SetActive(true);
-        TreningScreen.SetActive(false);
-
         if (Trainer.NextLevelUnlocked() && Saver.GetLevel() < Levels.Length - 1)
         {
             Saver.LevelUp();
-            return;
         }
-
-        var regression = Trainer.CheckRegression();
-        if (regression > 0)
+        else
         {
-            Saver.SetBaseNumber(regression);
-            Debug.Log("Base number after training is: " + regression);
-            return;
+            var regression = Trainer.CheckRegression();
+            if (regression > 0)
+            {
+                Saver.SetBaseNumber(regression);
+                Debug.Log("Base number after training is: " + regression);
+            }
+            else
+            {
+                Debug.Log("Base number after training is: " + baseNumber);
+                Saver.SetBaseNumber(++baseNumber);
+            }
         }
 
-        Debug.Log("Base number after training is: " + baseNumber);
-        Saver.SetBaseNumber(++baseNumber);        
+        PlayerPrefs.Save();
+        TreningScreen.SetActive(false);
+        StartScreen.SetActive(true);
+        MainMenuView.PlayCompletionTransition();
     }
 }
