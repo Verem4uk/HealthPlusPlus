@@ -16,24 +16,13 @@ public class Controller : MonoBehaviour
     private Image Background;
 
     [SerializeField]
-    private GameObject RegresPanel;
-
-    [SerializeField]
-    private NumbersView RegresNumbersView;
-
-    [SerializeField]
-    private Button RegresMinusButton;
-
-    [SerializeField]
-    private Button RegresPlusButton;
+    private RegressPanelView RegresPanel;
 
     [SerializeField]
     private Level[] Levels;
 
     private ITrainer Trainer;
     private int RequiredRepeats;
-    private int RegresRepeats;
-    private int RegresMaxRepeats;
 
     private enum TrainingState
     {
@@ -106,51 +95,20 @@ public class Controller : MonoBehaviour
         }
 
         State = TrainingState.AwaitingRegression;
-        RegresMaxRepeats = Mathf.Max(0, RequiredRepeats - 1);
-        RegresRepeats = RegresMaxRepeats;
-        UpdateRegresCounter();
-        RegresPanel.SetActive(true);
-    }
-
-    public void DecreaseRegresRepeats()
-    {
-        if (State != TrainingState.AwaitingRegression)
-        {
-            return;
-        }
-
-        RegresRepeats = Mathf.Max(0, RegresRepeats - 1);
-        UpdateRegresCounter();
-    }
-
-    public void IncreaseRegresRepeats()
-    {
-        if (State != TrainingState.AwaitingRegression)
-        {
-            return;
-        }
-
-        RegresRepeats = Mathf.Min(RegresMaxRepeats, RegresRepeats + 1);
-        UpdateRegresCounter();
-    }
-
-    private void UpdateRegresCounter()
-    {
-        RegresNumbersView.SetValue(RegresRepeats);
-        RegresMinusButton.interactable = RegresRepeats > 0;
-        RegresPlusButton.interactable = RegresRepeats < RegresMaxRepeats;
+        RegresPanel.Open(Mathf.Max(0, RequiredRepeats - 1));
     }
 
     public void NextAfterFail()
     {
-        if (State != TrainingState.AwaitingRegression || !RegresPanel.activeSelf)
+        if (State != TrainingState.AwaitingRegression || !RegresPanel.IsOpen)
         {
             return;
         }
 
+        var repeatsCompleted = RegresPanel.SelectedRepeats;
         State = TrainingState.Training;
-        RegresPanel.SetActive(false);
-        var exe = Trainer.NextFail(RegresRepeats);
+        RegresPanel.Close();
+        var exe = Trainer.NextFail(repeatsCompleted);
         ShowExe(exe);
     }
 

@@ -503,9 +503,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1987138351}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
-        m_MethodName: DecreaseRegresRepeats
+      - m_Target: {fileID: 1385590211}
+        m_TargetAssemblyTypeName: RegressPanelView, Assembly-CSharp
+        m_MethodName: DecreaseRepeats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1747,9 +1747,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1987138351}
-        m_TargetAssemblyTypeName: Controller, Assembly-CSharp
-        m_MethodName: IncreaseRegresRepeats
+      - m_Target: {fileID: 1385590211}
+        m_TargetAssemblyTypeName: RegressPanelView, Assembly-CSharp
+        m_MethodName: IncreaseRepeats
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1808,6 +1808,7 @@ GameObject:
   - component: {fileID: 1385590208}
   - component: {fileID: 1385590210}
   - component: {fileID: 1385590209}
+  - component: {fileID: 1385590211}
   m_Layer: 5
   m_Name: RegressPanel
   m_TagString: Untagged
@@ -1877,6 +1878,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1385590207}
   m_CullTransparentMesh: 1
+--- !u!114 &1385590211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1385590207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b3f4747cbd3e234b99ade75419572d8, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  NumbersView: {fileID: 2135590314}
+  MinusButton: {fileID: 361176492}
+  PlusButton: {fileID: 1185823200}
 --- !u!1 &1642127138
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,10 +2406,7 @@ MonoBehaviour:
   TreningScreen: {fileID: 322811368}
   NumbersView: {fileID: 500436238}
   Background: {fileID: 527356289}
-  RegresPanel: {fileID: 1385590207}
-  RegresNumbersView: {fileID: 2135590314}
-  RegresMinusButton: {fileID: 361176492}
-  RegresPlusButton: {fileID: 1185823200}
+  RegresPanel: {fileID: 1385590211}
   Levels:
   - {fileID: 11400000, guid: abffa5365fa4f06479823342a4a9203c, type: 2}
   - {fileID: 11400000, guid: 5fc450f008da1eb48a19c082a1710ced, type: 2}
