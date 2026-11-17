@@ -119,7 +119,7 @@ public class Controller : MonoBehaviour
         StartScreen.SetActive(true);
         TreningScreen.SetActive(false);
 
-        if (Trainer.NextLevelUnlocked())
+        if (Trainer.NextLevelUnlocked() && Saver.GetLevel() < Levels.Length - 1)
         {
             Saver.LevelUp();
             return;
