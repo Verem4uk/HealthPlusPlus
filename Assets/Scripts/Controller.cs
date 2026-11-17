@@ -35,8 +35,22 @@ public class Controller : MonoBehaviour
     private int RegresRepeats;
     private int RegresMaxRepeats;
 
+    private enum TrainingState
+    {
+        Idle,
+        Training,
+        AwaitingRegression
+    }
+
+    private TrainingState State;
+
     public void Play()
     {
+        if (State != TrainingState.Idle)
+        {
+            return;
+        }
+
         StartScreen.SetActive(false);
         TreningScreen.SetActive(true);
 
@@ -57,6 +71,7 @@ public class Controller : MonoBehaviour
 
         var exe = Trainer.StartTrening(Levels[lvlIndex], baseNumber);
 
+        State = TrainingState.Training;
         ShowExe(exe);
     }
 
@@ -74,12 +89,23 @@ public class Controller : MonoBehaviour
 
     public void Next()
     {
+        if (State != TrainingState.Training)
+        {
+            return;
+        }
+
         var exe = Trainer.NextSuccess();
         ShowExe(exe);
     }
 
     public void Fail()
     {
+        if (State != TrainingState.Training)
+        {
+            return;
+        }
+
+        State = TrainingState.AwaitingRegression;
         RegresMaxRepeats = Mathf.Max(0, RequiredRepeats - 1);
         RegresRepeats = RegresMaxRepeats;
         UpdateRegresCounter();
@@ -88,12 +114,22 @@ public class Controller : MonoBehaviour
 
     public void DecreaseRegresRepeats()
     {
+        if (State != TrainingState.AwaitingRegression)
+        {
+            return;
+        }
+
         RegresRepeats = Mathf.Max(0, RegresRepeats - 1);
         UpdateRegresCounter();
     }
 
     public void IncreaseRegresRepeats()
     {
+        if (State != TrainingState.AwaitingRegression)
+        {
+            return;
+        }
+
         RegresRepeats = Mathf.Min(RegresMaxRepeats, RegresRepeats + 1);
         UpdateRegresCounter();
     }
@@ -107,6 +143,12 @@ public class Controller : MonoBehaviour
 
     public void NextAfterFail()
     {
+        if (State != TrainingState.AwaitingRegression || !RegresPanel.activeSelf)
+        {
+            return;
+        }
+
+        State = TrainingState.Training;
         RegresPanel.SetActive(false);
         var exe = Trainer.NextFail(RegresRepeats);
         ShowExe(exe);
@@ -114,6 +156,12 @@ public class Controller : MonoBehaviour
 
     public void OnCompleted(int baseNumber)
     {
+        if (State != TrainingState.Training)
+        {
+            return;
+        }
+
+        State = TrainingState.Idle;
         Trainer.OnTrainingCompleted -= OnCompleted;
 
         StartScreen.SetActive(true);

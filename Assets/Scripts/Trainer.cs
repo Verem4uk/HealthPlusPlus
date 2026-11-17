@@ -11,6 +11,7 @@ public class Trainer : ITrainer
     private bool FullyCompleted = true;
 
     private IExercise CurrentExe;
+    private bool IsRunning;
 
     public event Action<int> OnTrainingCompleted;
 
@@ -22,12 +23,18 @@ public class Trainer : ITrainer
 
         var exeSO = Level.Exercises[0];
         CurrentExe = new ExerciseEntity(exeSO, BaseNumber);
+        IsRunning = true;
 
         return CurrentExe;
     }
 
     public IExercise NextSuccess()
     {
+        if (!IsRunning)
+        {
+            return null;
+        }
+
         if(!CurrentExe.IsFullyCompleted())
         {
             FullyCompleted = false;
@@ -36,6 +43,7 @@ public class Trainer : ITrainer
         ExerciseIndex++;
         if(ExerciseIndex > ExercisesLength - 1)
         {
+            IsRunning = false;
             OnTrainingCompleted?.Invoke(BaseNumber);
             return null;
         }
@@ -48,6 +56,11 @@ public class Trainer : ITrainer
 
     public IExercise NextFail(int repeatsCompleted)
     {
+        if (!IsRunning)
+        {
+            return null;
+        }
+
         BaseNumber = BaseNumber > repeatsCompleted ? repeatsCompleted : BaseNumber;
         Regression = repeatsCompleted / 2;
 
