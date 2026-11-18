@@ -8,6 +8,11 @@ public class ExerciseSO : ScriptableObject
 
     public bool IsTimed => timed;
 
+    [SerializeField, Tooltip("HTTPS URL of the exercise MP4. Leave empty to use the image.")]
+    private string videoUrl;
+
+    public string VideoUrl => videoUrl?.Trim() ?? string.Empty;
+
     [SerializeField]
     public Sprite Icon;
 

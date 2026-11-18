@@ -1,5 +1,5 @@
 using UnityEngine;
-using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class Controller : MonoBehaviour
 {
@@ -16,13 +16,18 @@ public class Controller : MonoBehaviour
     private ExerciseTimerView ExerciseView;
 
     [SerializeField]
-    private Image Background;
+    private ExerciseMediaView MediaView;
+
+    [SerializeField]
+    private TrainingVideoBootstrap Videos;
 
     [SerializeField]
     private RegressPanelView RegresPanel;
 
     [SerializeField]
     private Level[] Levels;
+
+    public IReadOnlyList<Level> TrainingLevels => Levels;
 
     private ITrainer Trainer;
     private int RequiredRepeats;
@@ -51,6 +56,7 @@ public class Controller : MonoBehaviour
         Trainer.OnTrainingCompleted += OnCompleted;
 
         var lvlIndex = Saver.GetLevel();
+        Videos.PrepareLevel(lvlIndex);
         var baseNumber = Saver.GetBaseNumber();
         Debug.Log("Start base number is: " + baseNumber);
         var level = Levels[lvlIndex];
@@ -76,7 +82,8 @@ public class Controller : MonoBehaviour
 
         RequiredRepeats = exe.GetCurrentAmount();
         ExerciseView.Show(exe.IsTimed, RequiredRepeats);
-        Background.sprite = exe.GetImage();
+        Videos.TryGetVideo(exe.VideoUrl, out var video);
+        MediaView.Show(exe.GetImage(), video);
     }  
 
     public void Next()
@@ -154,6 +161,7 @@ public class Controller : MonoBehaviour
         }
 
         PlayerPrefs.Save();
+        Videos.PrepareLevel(Saver.GetLevel());
         TreningScreen.SetActive(false);
         StartScreen.SetActive(true);
         MainMenuView.PlayCompletionTransition();

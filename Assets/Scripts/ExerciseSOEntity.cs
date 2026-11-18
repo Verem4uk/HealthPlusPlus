@@ -25,5 +25,7 @@ public class ExerciseSOEntity
 
     public bool IsTimed => exercise.IsTimed;
 
+    public string VideoUrl => exercise != null ? exercise.VideoUrl : string.Empty;
+
     public Sprite GetIcon() => exercise.Icon;
 }
