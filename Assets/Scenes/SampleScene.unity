@@ -423,7 +423,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2348881751735888938, guid: 2331bfc509be16341a1730ea549b4eac, type: 3}
+  m_Sprite: {fileID: -4226392715816407447, guid: 39ef5cdf04642e645891421d695a7025, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1169,7 +1169,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 654438034}
-  m_LocalRotation: {x: 0, y: 0, z: -0.55273724, w: 0.8333556}
+  m_LocalRotation: {x: 0, y: 0, z: 0.83335567, w: 0.5527371}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
@@ -1206,7 +1206,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 1, g: 1, b: 1, a: 1}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1220,7 +1220,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 654438037}
   m_OnClick:
     m_PersistentCalls:
@@ -2767,7 +2767,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2026234483}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 4a51363352739a54c9804f36e00d4b52, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 24d2360cf140a9046802361ce0f0551d, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -3126,6 +3126,8 @@ MonoBehaviour:
   PlayButton: {fileID: 654438036}
   VideoImage: {fileID: 2026234488}
   Player: {fileID: 2026234484}
+  NightToDayClip: {fileID: 32900000, guid: 24d2360cf140a9046802361ce0f0551d, type: 3}
+  DayToNightClip: {fileID: 32900000, guid: 4a51363352739a54c9804f36e00d4b52, type: 3}
   DayButtonAngle: -67.109985
 --- !u!1 &2135590313
 GameObject:

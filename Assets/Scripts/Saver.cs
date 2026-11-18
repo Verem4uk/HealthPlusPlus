@@ -1,7 +1,16 @@
+using System;
 using UnityEngine;
 
 public static class Saver
 {    
+    private const string CompletedTrainingDayKey = "CompletedTrainingDay";
+
+    public static bool IsTrainingAvailable() =>
+        TrainingDaySchedule.IsAvailable(PlayerPrefs.GetString(CompletedTrainingDayKey), DateTime.Now);
+
+    public static void MarkTrainingCompleted() =>
+        PlayerPrefs.SetString(CompletedTrainingDayKey, TrainingDaySchedule.GetDayKey(DateTime.Now));
+
     public static void SetLanguage(int value) => PlayerPrefs.SetInt("Language", value);
     public static int GetLanguage() => PlayerPrefs.GetInt("Language");
 

@@ -43,7 +43,7 @@ public class Controller : MonoBehaviour
 
     public void Play()
     {
-        if (State != TrainingState.Idle || MainMenuView.IsTransitioning)
+        if (State != TrainingState.Idle || !Saver.IsTrainingAvailable() || !MainMenuView.CanStartTraining)
         {
             return;
         }
@@ -160,6 +160,7 @@ public class Controller : MonoBehaviour
             }
         }
 
+        Saver.MarkTrainingCompleted();
         PlayerPrefs.Save();
         Videos.PrepareLevel(Saver.GetLevel());
         TreningScreen.SetActive(false);
