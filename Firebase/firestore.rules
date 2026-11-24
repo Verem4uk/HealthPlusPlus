@@ -1,0 +1,31 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /healthPlusPlusProgress/{uid} {
+      function ownsProgress() {
+        return request.auth != null && request.auth.uid == uid;
+      }
+      function validProgress() {
+        let data = request.resource.data;
+        let progress = data.progress;
+        return data.keys().hasOnly(['revision', 'mutationId', 'progress', 'updatedAt'])
+          && data.keys().hasAll(['revision', 'mutationId', 'progress', 'updatedAt'])
+          && data.revision is int && data.revision > 0
+          && data.mutationId is string && data.mutationId.size() > 0 && data.mutationId.size() <= 100
+          && data.updatedAt == request.time
+          && progress.keys().hasOnly(['schemaVersion', 'level', 'baseNumber', 'completedTrainingDay'])
+          && progress.keys().hasAll(['schemaVersion', 'level', 'baseNumber', 'completedTrainingDay'])
+          && progress.schemaVersion == 1
+          && progress.level is int && progress.level >= 0 && progress.level <= 10000
+          && progress.baseNumber is int && progress.baseNumber >= 0 && progress.baseNumber <= 1000000
+          && progress.completedTrainingDay is string
+          && (progress.completedTrainingDay == '' || progress.completedTrainingDay.matches('^[0-9]{4}-[0-9]{2}-[0-9]{2}$'));
+      }
+      allow get: if ownsProgress();
+      allow create: if ownsProgress() && validProgress() && request.resource.data.revision == 1;
+      allow update: if ownsProgress() && validProgress()
+        && request.resource.data.revision == resource.data.revision + 1;
+      allow list, delete: if false;
+    }
+  }
+}

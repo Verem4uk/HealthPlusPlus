@@ -98,6 +98,12 @@ public class MainMenuTransitionView : MonoBehaviour
         BeginTransition(false);
     }
 
+    public void RefreshSavedProgress()
+    {
+        FinishTransition();
+        RefreshAvailability(true);
+    }
+
     private void BeginTransition(bool toDay)
     {
         if (IsTransitioning)

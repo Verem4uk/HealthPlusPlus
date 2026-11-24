@@ -31,6 +31,8 @@ public class Controller : MonoBehaviour
 
     private ITrainer Trainer;
     private int RequiredRepeats;
+    private int TrainingLevelIndex;
+    private double TrainingStartedAt;
 
     private enum TrainingState
     {
@@ -43,7 +45,7 @@ public class Controller : MonoBehaviour
 
     public void Play()
     {
-        if (State != TrainingState.Idle || !Saver.IsTrainingAvailable() || !MainMenuView.CanStartTraining)
+        if (!CloudProgress.IsReady || State != TrainingState.Idle || !Saver.IsTrainingAvailable() || !MainMenuView.CanStartTraining)
         {
             return;
         }
@@ -70,6 +72,9 @@ public class Controller : MonoBehaviour
         var exe = Trainer.StartTrening(Levels[lvlIndex], baseNumber);
 
         State = TrainingState.Training;
+        TrainingLevelIndex = lvlIndex;
+        TrainingStartedAt = Time.realtimeSinceStartupAsDouble;
+        ProductAnalytics.TrainingStart(lvlIndex, baseNumber);
         ShowExe(exe);
     }
 
@@ -161,7 +166,8 @@ public class Controller : MonoBehaviour
         }
 
         Saver.MarkTrainingCompleted();
-        PlayerPrefs.Save();
+        CloudProgress.Save();
+        ProductAnalytics.TrainingComplete(TrainingLevelIndex, Time.realtimeSinceStartupAsDouble - TrainingStartedAt);
         Videos.PrepareLevel(Saver.GetLevel());
         TreningScreen.SetActive(false);
         StartScreen.SetActive(true);

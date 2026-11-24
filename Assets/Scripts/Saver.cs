@@ -34,6 +34,22 @@ public static class Saver
     }
 
     public static int GetLevel() => PlayerPrefs.GetInt("Level");         
+
+    public static ProgressSnapshot CaptureProgress() => new ProgressSnapshot
+    {
+        level = GetLevel(),
+        baseNumber = GetBaseNumber(),
+        completedTrainingDay = PlayerPrefs.GetString(CompletedTrainingDayKey)
+    };
+
+    public static void RestoreProgress(ProgressSnapshot progress)
+    {
+        // Restore must also be able to replace progress from another account.
+        PlayerPrefs.SetInt("Level", progress.level);
+        PlayerPrefs.SetInt("BaseNumber", progress.baseNumber);
+        PlayerPrefs.SetString(CompletedTrainingDayKey, progress.completedTrainingDay);
+        PlayerPrefs.Save();
+    }
     
     public static void Clear()
     {

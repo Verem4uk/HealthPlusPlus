@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Health++</title>
+  <style>
+    * { box-sizing: border-box; }
+    [hidden] { display: none !important; }
+    body { margin: 0; background: #101b21; color: #f3efe3; font: 15px system-ui, sans-serif; }
+    header { min-height: 52px; display: flex; align-items: center; justify-content: center; gap: 12px; padding: 8px; flex-wrap: wrap; }
+    button { border: 1px solid #b5c6a0; border-radius: 8px; padding: 10px 16px; background: #d9e8bd; color: #15211b; cursor: pointer; font: inherit; }
+    button:disabled { opacity: .5; cursor: wait; }
+    #unity-canvas { display: block; width: min(100vw, calc((100dvh - 70px) * 9 / 16)); height: calc(100dvh - 70px); margin: auto; background: #101b21; }
+    #account-gate { position: fixed; inset: 52px 0 0; display: grid; place-content: center; padding: 24px; background: #101b21; z-index: 2; text-align: center; }
+    #account-message { max-width: 420px; line-height: 1.6; }
+    #conflict { display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <span id="save-status" role="status">Health++</span>
+    <button id="retry" hidden>Retry</button>
+    <button id="sign-out" hidden>Sign out</button>
+  </header>
+  <canvas id="unity-canvas" width="540" height="960" tabindex="-1"></canvas>
+  <section id="account-gate" aria-live="polite">
+    <h1>Health++</h1>
+    <p id="account-message">Loading Health++…</p>
+    <button id="sign-in" hidden>Sign in with Google</button>
+    <button id="continue-guest" hidden>Continue as guest</button>
+    <div id="conflict" hidden>
+      <button id="use-local">Use this device's progress</button>
+      <button id="use-cloud">Use account progress</button>
+    </div>
+  </section>
+  <script src="Build/{{{ LOADER_FILENAME }}}"></script>
+  <script>
+    window.startHealthUnity = () => createUnityInstance(document.querySelector("#unity-canvas"), {
+      arguments: [],
+      dataUrl: "Build/{{{ DATA_FILENAME }}}",
+      frameworkUrl: "Build/{{{ FRAMEWORK_FILENAME }}}",
+#if USE_THREADS
+      workerUrl: "Build/{{{ WORKER_FILENAME }}}",
+#endif
+#if USE_WASM
+      codeUrl: "Build/{{{ CODE_FILENAME }}}",
+#endif
+#if SYMBOLS_FILENAME
+      symbolsUrl: "Build/{{{ SYMBOLS_FILENAME }}}",
+#endif
+      streamingAssetsUrl: "StreamingAssets",
+      companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+      productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+      productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+      devicePixelRatio: Math.min(window.devicePixelRatio || 1, 2)
+    }, progress => {
+      document.querySelector("#account-message").textContent = "Loading Health++: " + Math.round(progress * 100) + "%";
+    });
+  </script>
+  <script type="module" src="cloud.js"></script>
+</body>
+</html>
