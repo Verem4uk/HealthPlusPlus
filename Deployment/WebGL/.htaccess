@@ -1,0 +1,21 @@
+# For the HealthCloud build: Gzip + Decompression Fallback (.unityweb).
+# Copy into /HealthPlusPlus/ alongside index.html when uploading the build.
+<IfModule mod_mime.c>
+    AddType application/javascript .js .mjs
+    AddEncoding gzip .unityweb
+    AddType application/gzip .data.unityweb
+    AddType application/javascript .js.unityweb
+    AddType application/wasm .wasm.unityweb
+</IfModule>
+
+# Unity has already compressed these files. Avoid dynamic recompression.
+<IfModule mod_setenvif.c>
+    SetEnvIf Request_URI "\.unityweb$" no-gzip=1 no-brotli=1
+</IfModule>
+
+# Revalidate the entry page and modules so new app versions load together.
+<IfModule mod_headers.c>
+    <FilesMatch "\.(html|js|mjs)$">
+        Header set Cache-Control "no-cache"
+    </FilesMatch>
+</IfModule>
