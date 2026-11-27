@@ -64,6 +64,14 @@ sysinfo.txt
 *.unitypackage.meta
 *.app
 
+# Generated deployment packages; keep server configuration in version control.
+/[Dd]eployment/**/*.zip
+
+# Local JavaScript dependencies and browser-test reports.
+node_modules/
+/test-results/
+/playwright-report/
+
 # Crashlytics generated file
 crashlytics-build.properties
 

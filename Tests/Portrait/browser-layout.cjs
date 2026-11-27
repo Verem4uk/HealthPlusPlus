@@ -10,14 +10,15 @@ const templateRoot = 'Assets/WebGLTemplates/HealthCloud';
 const template = fs.readFileSync(path.join(templateRoot, 'index.html'), 'utf8')
   .replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '')
   .replace('</body>', '<script type="module" src="portrait-viewport.mjs"></script></body>');
-const profiles = [[320,568], [360,780], [390,844], [430,932], [432,960], [768,1024], [820,1180], [1024,1366]];
+const profiles = [[320,568], [360,780], [390,844], [430,932], [432,960], [768,1024], [820,1180], [1024,1366], [1366,768], [1920,1080], [2560,1440]];
 const output = path.resolve('Logs/PortraitLayout/Web');
 fs.mkdirSync(output, { recursive: true });
 const server = http.createServer((request, response) => {
   if (request.url === '/') { response.setHeader('Content-Type', 'text/html'); response.end(template); }
-  else if (request.url === '/portrait-viewport.mjs') {
-    response.setHeader('Content-Type', 'application/javascript');
-    response.end(fs.readFileSync(path.join(templateRoot, 'portrait-viewport.mjs')));
+  else if (/^\/(portrait-viewport\.mjs|theme[\w.-]+)$/.test(request.url) && fs.existsSync(path.join(templateRoot, request.url.slice(1)))) {
+    const ext = path.extname(request.url);
+    response.setHeader('Content-Type', ({ '.mjs': 'application/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.png': 'image/png' })[ext]);
+    response.end(fs.readFileSync(path.join(templateRoot, request.url.slice(1))));
   } else { response.statusCode = 404; response.end(); }
 });
 
@@ -37,6 +38,8 @@ const server = http.createServer((request, response) => {
           document.querySelector('#continue-guest').hidden = mode !== 'welcome';
           document.querySelector('#conflict').hidden = mode !== 'conflict';
           document.querySelector('#sign-out').hidden = mode !== 'conflict';
+          document.querySelector('#account-menu').hidden = mode !== 'conflict';
+          document.querySelector('#fullscreen-toggle').hidden = mode === 'welcome';
           document.querySelector('#retry').hidden = mode !== 'conflict';
           document.querySelector('#save-status').textContent = mode === 'conflict'
             ? 'Saved on this device; waiting to sync your progress' : 'Health++';
@@ -57,7 +60,7 @@ const server = http.createServer((request, response) => {
             horizontal: document.documentElement.scrollWidth > innerWidth,
             bottom: viewport.bottom > innerHeight + 1,
             canvasClipped: canvas.width > viewport.width + 1 || canvas.height > viewport.height + 1,
-            landscapeCanvas: canvas.width > canvas.height * .751,
+            unusedCanvasSpace: Math.abs(canvas.width - viewport.width) > 1,
             overflow: gate.scrollHeight > gate.clientHeight + 1,
             smallButtons: [...document.querySelectorAll('button')].filter(button => button.checkVisibility()).some(button => button.getBoundingClientRect().height < 44),
             buttonsClipped: [...gate.querySelectorAll('button')].filter(button => button.checkVisibility()).some(button => {
@@ -70,7 +73,7 @@ const server = http.createServer((request, response) => {
           assert.equal(present, false, `${width}x${height}, insets=${inset}, ${mode}: ${problem}`);
           checks++;
         }
-        if (!inset && (width === 390 || width === 768))
+        if (!inset && (width === 390 || width === 768 || width === 1920))
           await page.screenshot({ path: path.join(output, `${width}x${height}_${mode}.png`) });
       }
     }

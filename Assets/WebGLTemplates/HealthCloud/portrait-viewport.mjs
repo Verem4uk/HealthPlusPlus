@@ -1,7 +1,8 @@
 export function fitPortraitViewport(width, height) {
   if (!Number.isFinite(width) || !Number.isFinite(height) || width <= 0 || height <= 0)
     return { width: 0, height: 0 };
-  return { width: Math.min(width, height * .75), height };
+  // Unity keeps the artwork in its portrait column; the green backdrop fills the screen.
+  return { width, height };
 }
 
 export function installPortraitViewport(document, window) {

@@ -27,11 +27,12 @@ public class ExerciseSO : ScriptableObject
     public string GetText()
     {
         var languageIndex = Root.GetLanguageIndex();
-        return languageIndex switch
+        string text = languageIndex switch
         {
             1 => PolishText,
             2 => RussianText,
             _ => EnglishText
         };
+        return string.IsNullOrWhiteSpace(text) ? EnglishText : text;
     }
 }

@@ -19,6 +19,7 @@ public static class HealthPortraitInstaller
 
     public static void Configure(Scene scene)
     {
+        VikingThemeInstaller.PrepareAssets();
         foreach (var canvas in scene.GetRootGameObjects().SelectMany(root => root.GetComponentsInChildren<Canvas>(true)))
         {
             if (!canvas.isRootCanvas) continue;
@@ -32,7 +33,7 @@ public static class HealthPortraitInstaller
             Stretch(frame.SafeArea);
             frame.Content = Child(frame.SafeArea, "PortraitContent");
             Stretch(frame.Content);
-            var background = canvas.transform.Find("Panel").GetComponent<RectTransform>();
+            var background = frame.Background != null ? frame.Background.rectTransform : canvas.transform.Find("Panel").GetComponent<RectTransform>();
             background.SetAsFirstSibling();
             var backgroundImage = background.GetComponent<Image>();
             frame.Background = backgroundImage;
@@ -95,6 +96,7 @@ public static class HealthPortraitInstaller
                 aspect.enabled = true;
                 frame.Regression.SetAsLastSibling();
             }
+            VikingThemeInstaller.Configure(canvas, frame);
             frame.Apply(new Vector2(1080, 2400), new Rect(0, 0, 1080, 2400));
             frame.Content.sizeDelta = new Vector2(1080, 0);
             frame.Refresh(new Vector2(1080, 2400));

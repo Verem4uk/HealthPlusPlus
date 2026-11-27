@@ -9,6 +9,11 @@ public sealed class PortraitTrainingLayout : MonoBehaviour
     public bool IsMenu;
     public RectTransform Title;
     public RectTransform MenuButton;
+    public RectTransform MenuArtwork;
+    public RectTransform MenuGlow;
+    public RectTransform ExerciseTitle;
+    public RectTransform ExerciseUnit;
+    [Min(.1f)] public float MediaAspect = 9f / 16;
     public RectTransform Numbers;
     public RectTransform Media;
     public RectTransform Success;
@@ -29,6 +34,13 @@ public sealed class PortraitTrainingLayout : MonoBehaviour
 
     private void OnEnable() => Apply(new Vector2(Screen.width, Screen.height), Screen.safeArea);
 
+    public void SetMediaAspect(float aspect)
+    {
+        if (aspect <= 0 || float.IsNaN(aspect) || float.IsInfinity(aspect)) return;
+        MediaAspect = aspect;
+        Refresh();
+    }
+
     private void LateUpdate()
     {
         var viewport = new Vector2(Screen.width, Screen.height);
@@ -36,7 +48,7 @@ public sealed class PortraitTrainingLayout : MonoBehaviour
             Apply(viewport, Screen.safeArea);
         if (Content != null && SafeArea != null)
         {
-            float width = Mathf.Min(1080, SafeArea.rect.width);
+            float width = ContentWidth();
             if (Mathf.Abs(Content.rect.width - width) > .01f)
                 Content.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, width);
         }
@@ -58,9 +70,11 @@ public sealed class PortraitTrainingLayout : MonoBehaviour
         Content.anchorMax = new Vector2(.5f, 1);
         Content.pivot = Vector2.one * .5f;
         Content.anchoredPosition = Vector2.zero;
-        Content.sizeDelta = new Vector2(Mathf.Min(1080, SafeArea.rect.width), 0);
+        Content.sizeDelta = new Vector2(ContentWidth(), 0);
         Refresh();
     }
+
+    private float ContentWidth() => Mathf.Min(1080, SafeArea.rect.width, SafeArea.rect.height * .5625f);
 
     public void Refresh()
     {
@@ -74,33 +88,41 @@ public sealed class PortraitTrainingLayout : MonoBehaviour
         if (size.x <= 0 || size.y <= 0) return;
         if (IsMenu)
         {
-            var titleWidth = Mathf.Min(790.7f, size.x - 120);
-            Set(Title, new Vector2(.5f, 1), new Vector2(0, -260), new Vector2(titleWidth, titleWidth * 342.6f / 790.7f));
+            float ratio = Background != null && Background.sprite != null
+                ? Background.sprite.rect.width / Background.sprite.rect.height : .44972f;
+            float artHeight = Mathf.Min(size.y - 110, (size.x - 80) / ratio);
+            var artSize = new Vector2(artHeight * ratio, artHeight);
+            Set(MenuArtwork, new Vector2(.5f, .5f), new Vector2(0, 15), artSize);
+            var titleWidth = Mathf.Min(790.7f, artSize.x - 90);
+            float titleHeight = titleWidth * 342.6f / 790.7f;
+            Set(Title, new Vector2(.5f, 1), new Vector2(0, -60 - titleHeight * .5f), new Vector2(titleWidth, titleHeight));
             // Keep the authored button scale for its pulse and half-turn animation.
-            var buttonWidth = Mathf.Min(1169, (size.x - 140) * 2);
+            var buttonWidth = Mathf.Min(680, size.x * .66f);
             float radius = buttonWidth * .25f * Mathf.Sqrt(1 + Mathf.Pow(1203f / 1169, 2));
-            Set(MenuButton, new Vector2(.5f, 0), new Vector2(0, Mathf.Max(344, radius * 1.06f + 48)), new Vector2(buttonWidth, buttonWidth * 1203 / 1169));
+            float buttonY = Mathf.Max(250, radius * 1.06f + 35);
+            Set(MenuButton, new Vector2(.5f, 0), new Vector2(0, buttonY), new Vector2(buttonWidth, buttonWidth * 1203 / 1169));
+            Set(MenuGlow, new Vector2(.5f, 0), new Vector2(0, buttonY), Vector2.one * buttonWidth * .62f);
             return;
         }
 
-        float header = Mathf.Min(420, size.y * .20f);
-        float button = Mathf.Min(280, size.x * .26f);
-        Set(Numbers, new Vector2(.5f, 1), new Vector2(0, -32 - header * .5f), new Vector2(Mathf.Min(760, size.x - 120), header));
-        Media.anchorMin = new Vector2(0, 0);
-        Media.anchorMax = Vector2.one;
-        Media.offsetMin = new Vector2(40, 440);
-        Media.offsetMax = new Vector2(-40, -header - 80);
-        Set(Fail, new Vector2(.25f, 0), new Vector2(0, 220), new Vector2(button, button));
-        Set(Success, new Vector2(.75f, 0), new Vector2(0, 220), new Vector2(button, button));
-        Set(TimerStart, new Vector2(.5f, 0), new Vector2(0, 220), new Vector2(button, button));
+        const float header = 390, footer = 300;
+        Set(ExerciseTitle, new Vector2(.5f, 1), new Vector2(0, -70), new Vector2(size.x - 100, 100));
+        Set(Numbers, new Vector2(.5f, 1), new Vector2(0, -220), new Vector2(Mathf.Min(760, size.x - 120), 200));
+        Set(ExerciseUnit, new Vector2(.5f, 1), new Vector2(0, -350), new Vector2(size.x - 120, 50));
+        float mediaHeight = Mathf.Min(size.y - header - footer - 40, (size.x - 120) / MediaAspect);
+        Set(Media, new Vector2(.5f, .5f), new Vector2(0, (footer - header) * .5f), new Vector2(mediaHeight * MediaAspect, mediaHeight));
+        var actionSize = new Vector2(size.x * .5f - 60, 158);
+        Set(Fail, new Vector2(.25f, 0), new Vector2(10, 135), actionSize);
+        Set(Success, new Vector2(.75f, 0), new Vector2(-10, 135), actionSize);
+        Set(TimerStart, new Vector2(.5f, 0), new Vector2(0, 135), new Vector2(Mathf.Min(680, size.x - 120), 158));
         float bannerWidth = Mathf.Min(1000, size.x - 80);
-        float bannerHeight = Mathf.Min(bannerWidth * 764.4f / 1109.8f, size.y * .38f);
+        float bannerHeight = 180;
         Set(RegressionTitle, new Vector2(.5f, 1), new Vector2(0, -60 - bannerHeight * .5f), new Vector2(bannerWidth, bannerHeight));
         float row = -size.y * .08f;
         Set(RegressionNumbers, new Vector2(.5f, .5f), new Vector2(0, row), new Vector2(Mathf.Min(480, size.x * .46f), 220));
         Set(RegressionMinus, new Vector2(.5f, .5f), new Vector2(-size.x * .36f, row), new Vector2(160, 160));
         Set(RegressionPlus, new Vector2(.5f, .5f), new Vector2(size.x * .36f, row), new Vector2(160, 160));
-        Set(RegressionConfirm, new Vector2(.5f, 0), new Vector2(0, 240), new Vector2(360, 360));
+        Set(RegressionConfirm, new Vector2(.5f, 0), new Vector2(0, 280), new Vector2(360, 360));
     }
 
     private static void Set(RectTransform rect, Vector2 anchor, Vector2 position, Vector2 size)

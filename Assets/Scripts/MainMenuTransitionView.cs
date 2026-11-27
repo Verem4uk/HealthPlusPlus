@@ -121,24 +121,20 @@ public class MainMenuTransitionView : MonoBehaviour
         PlaybackStarted = false;
         LastVideoTime = 0;
         LastProgressTime = Time.realtimeSinceStartupAsDouble;
+        // WebGL needs URL video sources. The build hook copies the original clips unchanged.
+#if UNITY_WEBGL && !UNITY_EDITOR
+        Player.source = VideoSource.Url;
+        Player.url = Application.streamingAssetsPath.TrimEnd('/') + "/Menu/" +
+            (toDay ? "FromNightToDay.mp4" : "FromDayToNight.mp4");
+#else
+        Player.source = VideoSource.VideoClip;
         Player.clip = toDay ? NightToDayClip : DayToNightClip;
-
         if (Player.clip == null)
         {
             FinishTransition();
             return;
         }
-
-        var aspect = VideoImage.GetComponent<AspectRatioFitter>();
-        if (aspect != null)
-        {
-            aspect.aspectRatio = (float)Player.clip.width / Player.clip.height;
-        }
-
-        VideoTexture = new RenderTexture((int)Player.clip.width, (int)Player.clip.height, 0);
-        VideoTexture.Create();
-        Player.targetTexture = VideoTexture;
-        VideoImage.texture = VideoTexture;
+#endif
         Player.Prepare();
     }
 
@@ -161,6 +157,18 @@ public class MainMenuTransitionView : MonoBehaviour
             return;
         }
 
+        if (source.width == 0 || source.height == 0)
+        {
+            FinishTransition();
+            return;
+        }
+        var aspect = VideoImage.GetComponent<AspectRatioFitter>();
+        if (aspect != null) aspect.aspectRatio = (float)source.width / source.height;
+        VideoTexture = new RenderTexture((int)source.width, (int)source.height, 0);
+        VideoTexture.Create();
+        source.targetTexture = VideoTexture;
+        VideoImage.texture = VideoTexture;
+        HealthAudio.Apply(source);
         PlaybackStarted = true;
         LastProgressTime = Time.realtimeSinceStartupAsDouble;
         source.Play();
@@ -212,7 +220,7 @@ public class MainMenuTransitionView : MonoBehaviour
 
     private void UpdateVideoDisplay()
     {
-        var duration = Player.clip.length;
+        var duration = Player.length;
         var progress = duration > 0 ? Mathf.Clamp01((float)(Player.time / duration)) : 1;
         // Interpolate the angle directly to make the half-turn unambiguously clockwise.
         PlayButton.transform.localRotation = Quaternion.Euler(0, 0, RotationStart - 180 * progress);

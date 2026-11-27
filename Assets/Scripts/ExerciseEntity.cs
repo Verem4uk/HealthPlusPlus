@@ -22,6 +22,7 @@ public class ExerciseEntity : IExercise
     public Sprite GetImage() => SOEntity.GetIcon();
     public bool IsTimed => SOEntity.IsTimed;
     public string VideoUrl => SOEntity.VideoUrl;
+    public string DisplayName => SOEntity.DisplayName;
     public bool IsFullyCompleted() => CurrentAmount == SOEntity.TargetAmount;
     public int GetCurrentAmount() => CurrentAmount;    
 }

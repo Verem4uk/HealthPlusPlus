@@ -35,6 +35,8 @@ public class ExerciseMediaView : MonoBehaviour
     {
         StopVideo();
         Background.sprite = fallback;
+        if (fallback != null)
+            GetComponentInParent<PortraitTrainingLayout>()?.SetMediaAspect(fallback.rect.width / fallback.rect.height);
         if (video == null) return;
 
         CurrentVideo = video;
@@ -58,6 +60,8 @@ public class ExerciseMediaView : MonoBehaviour
         source.targetTexture = VideoTexture;
         VideoImage.texture = VideoTexture;
         VideoAspect.aspectRatio = (float)source.width / source.height;
+        HealthAudio.Apply(source);
+        GetComponentInParent<PortraitTrainingLayout>()?.SetMediaAspect(VideoAspect.aspectRatio);
         if (ApplicationPaused)
         {
             ResumePlayback = true;

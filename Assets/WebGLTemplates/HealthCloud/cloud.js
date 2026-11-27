@@ -40,6 +40,15 @@ function offerStart() {
   continueGuest.hidden = false;
 }
 
+// Open the existing account flow without interrupting an active workout.
+window.healthAccountState = () => {
+  const unfinished = guestMode && unity && !guest.state.progress.completedTrainingDay;
+  return { canSignIn: !unfinished && !login.disabled, message: unfinished
+    ? "Complete your guest workout to sign in."
+    : login.disabled ? "Account sign-in is unavailable right now." : "" };
+};
+window.healthOpenAccount = () => { if (window.healthAccountState().canSignIn) offerStart(); };
+
 function describe(value) {
   return value ? "level " + (value.level + 1) + ", workload " + value.baseNumber +
     ", last workout: " + (value.completedTrainingDay || "none") : "no saved progress";
@@ -102,6 +111,7 @@ async function load() {
 
 async function start(progress) {
   block("Loading Health++…");
+  if (guestMode) retry.hidden = true;
   if (!unity) unity = await window.startHealthUnity();
   unity.SendMessage("HealthCloudProgress", "Restore", JSON.stringify(progress));
 }

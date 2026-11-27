@@ -87,6 +87,7 @@ public class Controller : MonoBehaviour
 
         RequiredRepeats = exe.GetCurrentAmount();
         ExerciseView.Show(exe.IsTimed, RequiredRepeats);
+        ExerciseView.GetComponentInParent<ExercisePresentation>()?.Show(exe.DisplayName, exe.IsTimed);
         Videos.TryGetVideo(exe.VideoUrl, out var video);
         MediaView.Show(exe.GetImage(), video);
     }  

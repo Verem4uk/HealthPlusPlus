@@ -14,7 +14,8 @@ public static class HealthPortraitLayoutTests
     private static readonly Vector2Int[] Profiles = {
         new Vector2Int(320, 568), new Vector2Int(360, 780), new Vector2Int(390, 844),
         new Vector2Int(430, 932), new Vector2Int(1080, 2400),
-        new Vector2Int(768, 1024), new Vector2Int(820, 1180), new Vector2Int(1024, 1366)
+        new Vector2Int(768, 1024), new Vector2Int(820, 1180), new Vector2Int(1024, 1366),
+        new Vector2Int(1366, 768), new Vector2Int(1920, 1080), new Vector2Int(2560, 1440)
     };
 
     public static async void Run()
@@ -22,6 +23,11 @@ public static class HealthPortraitLayoutTests
         try
         {
             HealthPortraitInstaller.Apply();
+            int installedObjects = UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects()
+                .Sum(root => root.GetComponentsInChildren<Transform>(true).Length);
+            HealthPortraitInstaller.Apply();
+            Check(installedObjects == UnityEngine.SceneManagement.SceneManager.GetActiveScene().GetRootGameObjects()
+                .Sum(root => root.GetComponentsInChildren<Transform>(true).Length), "Theme installation duplicates objects.");
             var scene = EditorSceneManager.GetActiveScene();
             var roots = scene.GetRootGameObjects();
             var frames = roots.SelectMany(root => root.GetComponentsInChildren<PortraitTrainingLayout>(true)).ToArray();
@@ -55,6 +61,8 @@ public static class HealthPortraitLayoutTests
             var fallback = (Image)settings.FindProperty("Background").objectReferenceValue;
             var exercise = AssetDatabase.LoadAssetAtPath<ExerciseSO>("Assets/BD/Push-ups/0Knee Push-ups.asset");
             fallback.sprite = exercise.Icon;
+            training.SetMediaAspect(exercise.Icon.rect.width / exercise.Icon.rect.height);
+            training.GetComponent<ExercisePresentation>().Show(exercise.GetText(), false);
             var output = Path.GetFullPath("Logs/PortraitLayout");
             Directory.CreateDirectory(output);
 
@@ -81,6 +89,11 @@ public static class HealthPortraitLayoutTests
                     Check(Contains(menu.Content.rect, Bounds(menu.Title, menu.Content)), $"Title clipped: {profile}.");
                     Check(Contains(menu.Content.rect, Bounds(menu.MenuButton, menu.Content)), $"Menu button clipped: {profile}.");
                     Check(!Bounds(menu.Title, menu.Content).Overlaps(Bounds(menu.MenuButton, menu.Content)), "Menu controls overlap.");
+                    Check(Contains(menu.Content.rect, Bounds(menu.MenuArtwork, menu.Content)), "Menu artwork clipped.");
+                    Check(Mathf.Abs(menu.MenuArtwork.rect.width / menu.MenuArtwork.rect.height - menu.Background.sprite.rect.width / menu.Background.sprite.rect.height) < .001f, "Menu artwork stretched.");
+                    foreach (var graphic in frames.SelectMany(frame => frame.GetComponentsInChildren<Graphic>(true))
+                        .Where(graphic => graphic.name == "ForgedBorder" || graphic.name == "MenuSunGlow" || graphic is VikingOrnament))
+                        Check(!graphic.raycastTarget, "Theme decoration blocks pointer input.");
 
                     timer.Show(false, 999999);
                     Canvas.ForceUpdateCanvases();
@@ -110,12 +123,24 @@ public static class HealthPortraitLayoutTests
                     regression.Close();
                 }
 
-                if (profile == Profiles[0] || profile == Profiles[2] || profile == Profiles[4] || profile == Profiles[5])
+                if (profile == Profiles[0] || profile == Profiles[2] || profile == Profiles[4] || profile == Profiles[5] || profile.x == 1920)
                 {
                     menu.gameObject.SetActive(true);
                     training.gameObject.SetActive(false);
                     await Task.Yield();
                     Save(camera, profile, Path.Combine(output, $"{profile.x}x{profile.y}_Menu.png"));
+                    if (profile.x == 1920 || profile.x == 390)
+                    {
+                        var menuSettings = new SerializedObject(menu.GetComponent<MainMenuTransitionView>());
+                        var night = menu.Background.sprite;
+                        var rotation = menu.MenuButton.localRotation;
+                        menu.Background.sprite = (Sprite)menuSettings.FindProperty("DayBackground").objectReferenceValue;
+                        menu.MenuButton.localRotation = Quaternion.Euler(0, 0, -67.11f);
+                        Canvas.ForceUpdateCanvases();
+                        Save(camera, profile, Path.Combine(output, $"{profile.x}x{profile.y}_MenuDay.png"));
+                        menu.Background.sprite = night;
+                        menu.MenuButton.localRotation = rotation;
+                    }
                     menu.gameObject.SetActive(false);
                     training.gameObject.SetActive(true);
                     timer.Show(false, 25);
@@ -133,7 +158,7 @@ public static class HealthPortraitLayoutTests
                 }
             }
             Check(PlayerSettings.defaultInterfaceOrientation == UIOrientation.Portrait, "Native orientation is not portrait.");
-            File.WriteAllText(Path.Combine(output, "result.txt"), $"PASS: {Checks} layout checks across {Profiles.Length} portrait profiles, with and without safe-area insets. No player build was created.");
+            File.WriteAllText(Path.Combine(output, "result.txt"), $"PASS: {Checks} layout checks across {Profiles.Length} phone, tablet and desktop profiles, with and without safe-area insets. No player build was created.");
             Debug.Log($"PASS: {Checks} portrait layout checks.");
             EditorApplication.Exit(0);
         }
